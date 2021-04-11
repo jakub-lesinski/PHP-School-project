@@ -1,0 +1,36 @@
+.product {
+    padding: 50px 0;
+
+    &-heading,
+    &-price {
+        text-align: center;
+    }
+
+    &-price {
+        color: red;
+    }
+
+    &-info {
+        &-row {
+            display: flex;
+            flex-direction: column;
+            margin: 50px 0;
+
+            @include mb-up(md) {
+                flex-direction: row;
+            }
+        }
+
+        &-desc {
+            margin: 20px 0;
+
+            &:first-of-type {
+                margin: 0;
+            }
+
+            @include mb-up(md) {
+                margin: 0 20px;
+            }
+        }
+    }
+}

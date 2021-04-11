@@ -1,0 +1,46 @@
+body {
+    color: $mainBlack;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    text-align: center;
+    color: $blue;
+
+    &-heading {
+        margin: 0;
+        font-size: 25px;
+
+        span {
+            color: $mainBlack;
+        }
+    }
+}
+
+.section-heading {
+    text-align: center;
+    margin: 0 0 70px;
+}
+
+.swiper-container {
+    height: 70vh;
+}
+
+textarea {
+    resize: none;
+}
+
+.mapouter,
+.gmap_canvas,
+.map {
+    width: 100% !important;
+    height: 300px !important;
+    text-align: left !important;
+
+    @include mb-up(md) {
+        height: 500px !important;
+    }
+}

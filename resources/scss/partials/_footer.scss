@@ -1,0 +1,37 @@
+.footer {
+    background-color: $grey;
+    padding: 50px 0;
+    font-size: 18px;
+
+    &-wrapper {
+        margin: 0 10% 0;
+        padding-bottom: 50px;
+        border-bottom: 2px solid $mainBlack;
+    }
+
+    &-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-link,
+    &-link:hover {
+        color: $mainBlack;
+    }
+
+    &-desc {
+        text-align: center;
+        margin: 10px 0 0 10px;
+
+        @include mb-up(md) {
+            margin-top: 0;
+        }
+    }
+
+    &-copy {
+        text-align: center;
+        font-weight: bold;
+        margin: 20px 0 0;
+    }
+}

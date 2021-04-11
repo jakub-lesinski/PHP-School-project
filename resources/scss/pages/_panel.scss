@@ -1,0 +1,45 @@
+.panel {
+    padding: 50px 0;
+
+    &-heading {
+        text-align: center;
+        margin: 0 0 50px;
+    }
+
+    &-cycle {
+        margin: 20px 10px 20px 0;
+        font-weight: bold;
+        text-align: center;
+
+        @include mb-up(md) {
+            text-align: left;
+        }
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-desc {
+        margin: 0 10px 0 0;
+        padding: 10px;
+        text-align: center;
+        width: 70%;
+
+        @include mb-up(md) {
+            text-align: left;
+            width: auto;
+        }
+    }
+
+    &-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mb-up(md) {
+            justify-content: flex-start;
+        }
+    }
+}

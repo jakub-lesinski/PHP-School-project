@@ -1,0 +1,127 @@
+.listing {
+    padding: 50px 0 ;
+
+    &-filtr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &-line {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            @include mb-up(md) {
+                flex-direction: row;
+            }
+        }
+    }
+
+    &-select {
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid $mainBlack;
+        background-color: $grey;
+
+        @include mb-up(md) {
+            width: auto;
+        }
+    }
+
+    .accordion {
+        border: 2px solid $mainBlack;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        background-color: $white;
+      }
+
+    .accordion:hover {
+        background-color: #ccc;
+    }
+
+      .accordion:after {
+        content: '\002B';
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+      
+      .active:after {
+        content: "\2212";
+      }
+      
+      .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
+        color: $black;
+
+        &-heading {
+          text-align: center;
+
+          @include mb-up(md) {
+            text-align: left;
+          }
+        }
+
+        &:hover {
+          color: $black;
+        }
+        
+        @include mb-up(md) {
+          flex-direction: row;
+          align-items: center;
+        }
+
+        &-price {
+          color: red;
+          text-align: center;
+          
+          @include mb-up(md) {
+            text-align: left;
+          }
+        }
+
+        &-info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          @include mb-up(md) {
+            flex-direction: row;
+          }
+        }
+
+        &-cycle {
+          margin: 0 10px;
+        }
+
+        &-delete {
+          background: none;
+          border: none;
+        }
+
+        &-message {
+          display: flex;
+          flex-direction: column;
+          margin: 20px;
+        }
+      }
+}

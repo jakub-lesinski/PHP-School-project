@@ -1,0 +1,61 @@
+.contact {
+    padding: 50px 0;
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-link,
+    &-link:hover {
+        color: $mainBlack;
+    }
+
+    &-cycle {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    &-desc {
+        margin: 0 5px 0;
+        text-align: center;
+    }
+
+    &-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid $mainBlack;
+        border-radius: 5px;
+        background-color: $grey;
+        padding: 0 20px 20px;
+        margin: 0 auto;
+
+        &-heading {
+            margin: 40px 0;
+            text-align: center;
+        }
+    }
+
+    &-input {
+        padding: 10px;
+        margin: 20px 0 0;
+        width: 100%;
+    }
+
+    .textarea{
+        resize: none;
+        margin-top: 20px;
+        padding: 10px;
+        width: 100%;
+
+    }
+}

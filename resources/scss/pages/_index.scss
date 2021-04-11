@@ -1,0 +1,46 @@
+.index {
+    padding: 50px 0;
+
+    &-heading {
+        font-size: 32px;
+        margin: 15px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &-form {
+
+        &-line {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            @include mb-up(md) {
+                flex-direction: row;
+            }
+        }
+
+        &-select {
+            width: 100%;
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid $mainBlack;
+            background-color: $grey;
+
+            @include mb-up(md) {
+                width: auto;
+            }
+        }
+    }
+
+    &-link {
+        color: $mainBlack;
+        &:hover,
+        &:visited {
+            color: $mainBlack;
+        }
+        text-align: center;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,37 @@
+.login {
+    padding: 150px 0;
+
+    &-heading {
+        text-align: center;
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-input {
+        margin-bottom: 20px;
+        padding: 10px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    &-desc {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    &-link {
+        color: $mainBlack;
+        &:hover,
+        &:visited {
+            color: $mainBlack;
+        }
+        text-align: center;
+        font-size: 18px;
+    }
+}
